@@ -1,0 +1,212 @@
+/* ============== */
+/* Mini CSS Reset */
+/* ============== */
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul {
+  margin: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+    text-align: left;
+}
+
+
+/* =========== */
+/* Base Styles */
+/* =========== */
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: gray;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* =============== */
+/* Utility Classes */
+/* =============== */
+
+/* Clearfix (add to elements with floated children) */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* Grid Layout */
+/* Use a media query to only apply styles once viewport is wide enough */
+@media all and (min-width: 640px) {
+  /* Use "display: table" instead of floats to equalize the heights */
+  .row {
+    display: table;
+    table-layout: fixed;
+    vertical-align: top;
+    width: 100%;
+  }
+
+  .col {
+    display: table-cell;
+  }
+
+  .col-50 {
+    width: 50%;
+  }
+}
+
+
+/* ========== */
+/* Typography */
+/* ========== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0 1em;
+}
+
+li {
+  line-height: 1.5;
+  margin: 0 0 0.5em;
+}
+
+li ul,
+li ol {
+  margin-top: 1em;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+a,
+a:visited {
+  color: #0E922E;
+  text-decoration: none;
+  
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #30B450;
+  text-decoration: underline;
+}
+
+
+/* ====== */
+/* Header */
+/* ====== */
+.header {
+  background-color: #E5FCC2;
+}
+
+/* Images are "display: inline" by default, so will have extra space around them unless you set to "display: block" */
+.masthead {
+  display: block;
+}
+
+.header .title {
+  color: #ce6305;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/* =========== */
+/* Top Section */
+/* =========== */
+.main-top {
+  text-align: center;
+}
+
+.main-top .col {
+  padding: 20px;
+}
+
+.main-top h2 {
+  color: #E5FCC2;
+  margin-bottom: 0.5em;
+}
+
+.main-top ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-top p:last-child {
+  margin-bottom: 0;
+}
+
+.section-header {
+  background-color: #594F4F;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#history {
+  background-color: #45ADA8;
+}
+
+#liquors {
+  background-color: #ce6305;
+}
+
+#liquors a {
+  color: #9DE0AD;
+  text-shadow: none;
+}
+
+
+
+/* ====== */
+/* Footer */
+/* ====== */
+.footer-wrap {
+  color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.footer .legal {
+  color: rgba(255,255,255, 0.5);
+  font-size: 12px;
+  margin-bottom: 0;
+}
